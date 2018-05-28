@@ -1,4 +1,4 @@
-# AJACS
+# AJACS Chemical Informastion
 
 ## Chemical Database
 
