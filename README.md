@@ -70,9 +70,24 @@
 
 # 表記
 
-* IUPAC命名法
+* [IUPAC命名法](http://www.sbcs.qmul.ac.uk/iupac/)
+    * 化合物を命名する際の基本となる、国際純正・応用化学連合（International Union of Pure and Applied Chemistry、IUPAC)の命名法
+    * 化学構造式が複雑な化合物になると正しい命名をするのが簡単ではない。
+
+    * [日本語による化合物命名法](http://cicsj.chemistry.or.jp/14_5/hata.html)
+
+    * (2R,3S,5R)-5-(6-aminopurin-9-yl)-2-(hydroxymethyl)oxolan-3-ol
+
 * 慣用名
+
+    * デオキシアデノシン
+    * 2'-deoxyadenosine
+
 * ID
+
+    * [CAS 登録番号](https://www.jaici.or.jp/casproducts/rn/index.html)
+
+
 * SMILES
 * InChI
 * InChIKey
@@ -81,6 +96,8 @@
 # ファイル形式
 
 * .smi
+    * SMILESを格納、複数行にSMILESを記載することで一つのファイルに複数の化学構造を記述することができる。
+
 * .mol
 * .sdf
 
@@ -99,6 +116,8 @@
         * CDK
         * std-inchi
 
+* ID変換サービス
+    * [リンク自動管理システム（Hyperlink Management System）](http://biodb.jp/)
 
 # データベースを使ってみよう
 
@@ -114,9 +133,16 @@
     * Compound    CID (CompoundID)
     * BioAssay    AID (AssayID)
 
-* 'gefitinib'
-
 * [Chemical structure representation in PubChem](https://www.slideshare.net/NextMoveSoftware/chemical-structure-representation-in-pubchem?from_action=save)
+
+* ブラウザからの利用
+
+    * 化合物のページ
+        * [ゲフィチニブ（Gefitinib)](https://pubchem.ncbi.nlm.nih.gov/compound/123631#section=Top)
+
+        * [beta-D-Glucopyranose](https://pubchem.ncbi.nlm.nih.gov/compound/beta-D-glucose#section=Top)
+
+    * データの取得方法
 
 #### PubChem’s PUG (Power User Gateway)
 
