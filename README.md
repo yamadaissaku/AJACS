@@ -27,7 +27,7 @@
 * 化合物データベース
 
     * 化合物データベースのリスト
-        * [Integbioデータベースカタログ](https://integbio.jp/dbcatalog/?lang=ja)
+        * [Integbioデータベースカタログ](https://integbio.jp/dbcatalog/?lang=ja) https://integbio.jp/dbcatalog/?lang=ja
             * 文部科学省、厚生労働省、農林水産省、経済産業省による、生命科学系データベース統合のための合同ポータルサイト内のDBカタログ事業
             [![https://gyazo.com/5c7c1df9b4e588869d4dd75becbb1cd3](https://i.gyazo.com/5c7c1df9b4e588869d4dd75becbb1cd3.png)](https://gyazo.com/5c7c1df9b4e588869d4dd75becbb1cd3)
             
@@ -62,10 +62,12 @@
 * [質量分析法](https://ja.wikipedia.org/wiki/%E8%B3%AA%E9%87%8F%E5%88%86%E6%9E%90%E6%B3%95)
 * 安全性
     * 有害性情報、法規制情報など
-        * [独立行政法人製品評価技術基盤機構 (NITE) 化学物質総合情報提供システム](https://www.nite.go.jp/chem/chrip/chrip_search/srhInput)
+        * 独立行政法人製品評価技術基盤機構 (NITE) 化学物質総合情報提供システム
             * 化学物質の番号や名称等から、有害性情報、法規制情報及び国際機関によるリスク評価情報等を検索することができるシステム
+            * https://www.nite.go.jp/chem/chrip/chrip_search/srhInput
     * [化学物質等安全データシート (Safety Data Sheet, SDS)](https://ja.wikipedia.org/wiki/%E5%AE%89%E5%85%A8%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B7%E3%83%BC%E3%83%88)
-        * [一般社団法人日本試薬協会 SDS検索](https://www.j-shiyaku.or.jp/Sds)
+        * 一般社団法人日本試薬協会 SDS検索
+            * https://www.j-shiyaku.or.jp/Sds
 
 
 # 表記
@@ -75,13 +77,14 @@
     * 化学構造式が複雑な化合物になると正しい命名をするのが簡単ではない。
 
     * [日本語による化合物命名法](http://cicsj.chemistry.or.jp/14_5/hata.html)
+        * http://cicsj.chemistry.or.jp/14_5/hata.html
 
-    * (2R,3S,5R)-5-(6-aminopurin-9-yl)-2-(hydroxymethyl)oxolan-3-ol
+    * `(2R,3S,5R)-5-(6-aminopurin-9-yl)-2-(hydroxymethyl)oxolan-3-ol`
 
 * 慣用名
 
-    * デオキシアデノシン
-    * 2'-deoxyadenosine
+    * `デオキシアデノシン`
+    * `2'-deoxyadenosine`
 
 * ID
 
@@ -89,8 +92,17 @@
 
 
 * SMILES
+
+    * `C1[C@@H]([C@H](O[C@H]1N2C=NC3=C2N=CN=C3N)CO)O`
+
+* CTFile (Molfile, SDfile)
 * InChI
+
+    * `InChI=1S/C10H13N5O3/c11-9-8-10(13-3-12-9)15(4-14-8)7-1-5(17)6(2-16)18-7/h3-7,16-17H,1-2H2,(H2,11,12,13)/t5-,6+,7+/m0/s1`
+
 * InChIKey
+
+    * `OLXZPDWKRNYJJZ-RRKCRQDMSA-N`
 
 
 # ファイル形式
@@ -98,9 +110,18 @@
 * .smi
     * SMILESを格納、複数行にSMILESを記載することで一つのファイルに複数の化学構造を記述することができる。
 
+[![Image from Gyazo](https://i.gyazo.com/3dba74f046db054537dd620752484de1.png)](https://gyazo.com/3dba74f046db054537dd620752484de1)
+
 * .mol
+
+[![Image from Gyazo](https://i.gyazo.com/80b795c3979bead01535bde52d9c863b.png)](https://gyazo.com/80b795c3979bead01535bde52d9c863b)
+
+
 * .sdf
 
+[![Image from Gyazo](https://i.gyazo.com/4eecaa26d46c6eb4840f829507578677.png)](https://gyazo.com/4eecaa26d46c6eb4840f829507578677)
+
+* [他の形式例](http://openbabel.org/docs/2.3.0/FileFormats/Overview.html)
 
 
 # ツール
@@ -118,14 +139,20 @@
 
 * ID変換サービス
     * [リンク自動管理システム（Hyperlink Management System）](http://biodb.jp/)
+        * http://biodb.jp/
 
 # データベースを使ってみよう
 
 ## PubChem
 
 * PubChemとは？
+
+
+
     * 統合TVを見てみましょう
         * [2017-12-08 PubChemを利用して化学物質やアッセイの結果を調べる 2017]( http://togotv.dbcls.jp/20171208.html)
+            * http://togotv.dbcls.jp/20171208.html
+[![Image from Gyazo](https://i.gyazo.com/dd9616fac93a903519ba6e8e7cca85fc.png)](https://gyazo.com/dd9616fac93a903519ba6e8e7cca85fc)
 
 * Compound, Substance, BioAssay
 
