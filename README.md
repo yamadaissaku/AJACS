@@ -322,7 +322,17 @@ $$$$
 
     13. ダウンロードされたファイルを解凍すると、エディタなどでデータを見ることができます。
 
+    14. データセットとして、`Gene Ontology:　biological process`を選択してみます。Data typeとして、PubMed, Gene, Protein, Taxonomyが選択できるようになります。
+    [![Image from Gyazo](https://i.gyazo.com/99754ac29478b468acd7dfe9231efa9e.png)](https://gyazo.com/99754ac29478b468acd7dfe9231efa9e)
+
+    15. ここでは、Geneを選択し、Biological Process > metabolic process > glycosylation を選択してみます。
+    [![Image from Gyazo](https://i.gyazo.com/91d7521e82dc98bafcb326d58e262eca.png)](https://gyazo.com/91d7521e82dc98bafcb326d58e262eca)
+
+    16. glycosylationの右の「520」をクリックすると、新しいウインドウが開きます。Geneのリストが表示されます。Gene IDのリンクをクリックすると詳細画面を見ることができます。
+    [![Image from Gyazo](https://i.gyazo.com/e04dbd581ed4173fd9664d4b7040c486.png)](https://gyazo.com/e04dbd581ed4173fd9664d4b7040c486)
+
 * SDFを選択した場合の例
+
         ```
         350080125
         -OEChem-07041809452D
@@ -367,6 +377,15 @@ $$$$
 * SMILESを選択した場合の例
     * 化学構造がSMILESへ変換できない場合は、ID(SID)のみ出力される。
 [![Image from Gyazo](https://i.gyazo.com/941f927ef7619cc3d7254e49fa79accb.png)](https://gyazo.com/941f927ef7619cc3d7254e49fa79accb)
+
+        ```
+        350080125 CCCCCCCCCCCCCCCCCCCCCCCCCC(=O)N[C@@H](CO[C@@H]1[C@@H]([C@H]([C@H]([C@H](O1)CO)O)O)O)[C@@H]([C@@H](CCCCCCCC2=CC=CC=C2)O)O
+        350080124 CC(CC/C=C(\C)/CC/C=C(\C)/CC/C=C(\C)/CCC=C(C)C)CCOP(=O)(O)OP(=O)(O)O[C@@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O[C@H]3[C@H]([C@H]([C@@H]([C@H](O3)CO[C@@H]4[C@H]([C@H]([C@@H]([C@H](O4)CO[C@@H]5[C@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O[C@@H]6[C@H]([C@H]([C@@H]([C@H](O6)CO)O)O)O)O)O[C@@H]7[C@H]([C@H]([C@@H]([C@H](O7)CO)O)O)O[C@@H]8[C@H]([C@H]([C@@H]([C@H](O8)CO)O)O)O)O)O)O[C@@H]9[C@H]([C@H]([C@@H]([C@H](O9)CO)O)O)O[C@@H]1[C@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O[C@@H]1[C@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O)O)O)NC(=O)C)O)NC(=O)C
+        332875751 
+        329737157 CCCCCCCCCCCCCCCCCCCCCCCC(=O)N[C@@H](CO[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O[C@H]2[C@@H]([C@H]([C@H]([C@H](O2)CO)O[C@H]3[C@@H]([C@H]([C@H]([C@H](O3)CO)O)O)NC(=O)C)O[C@@]4(C[C@@H]([C@H](C(O4)[C@@H]([C@@H](CO)O[C@@]5(C[C@@H]([C@H](C(O5)[C@@H]([C@@H](CO)O)O)NC(=O)C)O)C(=O)O)O)NC(=O)C)O)C(=O)O)O)O)O)[C@@H](/C=C/CCCCCCCCCCCCC)O
+        ...
+        ```
+
 
 
     * [FTP]()
