@@ -328,7 +328,7 @@ $$$$
     15. ここでは、Geneを選択し、Biological Process > metabolic process > glycosylation を選択してみます。
     [![Image from Gyazo](https://i.gyazo.com/91d7521e82dc98bafcb326d58e262eca.png)](https://gyazo.com/91d7521e82dc98bafcb326d58e262eca)
 
-    16. glycosylationの右の「520」をクリックすると、新しいウインドウが開きます。Geneのリストが表示されます。Gene IDのリンクをクリックすると詳細画面を見ることができます。
+    16. glycosylationの右の「520」をクリックすると、新しいウインドウが開きます。Geneのリストが表示されます。Gene IDのリンクをクリックすると詳細画面を見ることができます。
     [![Image from Gyazo](https://i.gyazo.com/e04dbd581ed4173fd9664d4b7040c486.png)](https://gyazo.com/e04dbd581ed4173fd9664d4b7040c486)
 
 * SDFを選択した場合の例
