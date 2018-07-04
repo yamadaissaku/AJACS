@@ -94,8 +94,14 @@
 * SMILES
 
     * `C1[C@@H]([C@H](O[C@H]1N2C=NC3=C2N=CN=C3N)CO)O`
+    * 混合物の場合
+        `CO.CCO.OCCC.C1CCCCC1.C2=CC=CC=C2`
 
 * CTFile (Molfile, SDfile)
+
+    * 古くから利用されている。バージョンとしてV2000とV3000がある。一般的にはV2000が利用されているが、原子数、結合数が各999個までの制限がある。V3000にはこの制限はない。
+    * Molfileは
+
 * InChI
 
     * `InChI=1S/C10H13N5O3/c11-9-8-10(13-3-12-9)15(4-14-8)7-1-5(17)6(2-16)18-7/h3-7,16-17H,1-2H2,(H2,11,12,13)/t5-,6+,7+/m0/s1`
@@ -110,14 +116,79 @@
 * .smi
     * SMILESを格納、複数行にSMILESを記載することで一つのファイルに複数の化学構造を記述することができる。
 
+```
+CO
+CCO
+OCCC
+C1CCCCC1
+C2=CC=CC=C2
+```
+
 [![Image from Gyazo](https://i.gyazo.com/3dba74f046db054537dd620752484de1.png)](https://gyazo.com/3dba74f046db054537dd620752484de1)
 
 * .mol
+
+```
+887
+  -OEChem-07031813262D
+
+  6  5  0     0  0  0  0  0  0999 V2000
+    2.5369   -0.2500    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4030    0.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7130   -0.2869    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.9399    0.5600    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.0930    0.7869    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000    0.0600    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  1  6  1  0  0  0  0
+  2  3  1  0  0  0  0
+  2  4  1  0  0  0  0
+  2  5  1  0  0  0  0
+M  END
+```
 
 [![Image from Gyazo](https://i.gyazo.com/80b795c3979bead01535bde52d9c863b.png)](https://gyazo.com/80b795c3979bead01535bde52d9c863b)
 
 
 * .sdf
+
+```
+887
+  -OEChem-07031813262D
+
+  6  5  0     0  0  0  0  0  0999 V2000
+    2.5369   -0.2500    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.4030    0.2500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7130   -0.2869    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.9399    0.5600    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.0930    0.7869    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0000    0.0600    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  1  6  1  0  0  0  0
+  2  3  1  0  0  0  0
+  2  4  1  0  0  0  0
+  2  5  1  0  0  0  0
+M  END
+> <PUBCHEM_COMPOUND_CID>
+887
+
+> <PUBCHEM_IUPAC_INCHI>
+InChI=1S/CH4O/c1-2/h2H,1H3
+
+> <PUBCHEM_IUPAC_INCHIKEY>
+OKKJLVBELUTLKV-UHFFFAOYSA-N
+
+$$$$
+888
+  -OEChem-07031813262D
+
+  6  5  0     0  0  0  0  0  0999 V2000
+    2.5369   -0.2500    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    ...
+    ...
+$$$$
+```
+
 
 [![Image from Gyazo](https://i.gyazo.com/4eecaa26d46c6eb4840f829507578677.png)](https://gyazo.com/4eecaa26d46c6eb4840f829507578677)
 
@@ -135,7 +206,35 @@
         * Open Banel
         * RDKit
         * CDK
-        * std-inchi
+    
+    * 分子表示
+
+        * [GLmol - Molecular Viewer on WebGL/Javascript](http://webglmol.osdn.jp/index-ja.html)
+
+            * http://webglmol.osdn.jp/glmol/viewer.html
+        
+        1. サイトを開く
+        [![Image from Gyazo](https://i.gyazo.com/8c42be6984f08224c4eccc9c09a636ef.png)](https://gyazo.com/8c42be6984f08224c4eccc9c09a636ef)
+
+        2. https://pubchem.ncbi.nlm.nih.gov/compound/13730 のダウンロード、3D ConformerのSDFで Display をクリックする。
+        [![Image from Gyazo](https://i.gyazo.com/39c17594df8cb8b526fc7c8882254f20.png)](https://gyazo.com/39c17594df8cb8b526fc7c8882254f20)
+        
+        3. 表示されたSDFデータをコピーする。
+            [![Image from Gyazo](https://i.gyazo.com/e67b7ec9fcac730f723da023c4f3f93c.png)](https://gyazo.com/e67b7ec9fcac730f723da023c4f3f93c)
+
+        4. 1.のサイトの Loadをクリックする。
+        [![Image from Gyazo](https://i.gyazo.com/4ec8af59d093a81fd36019f779556b9a.png)](https://gyazo.com/4ec8af59d093a81fd36019f779556b9a)
+
+        5. 緑で選択された入力欄に、コピーしたSDFデータをぺーすとする。
+        [![Image from Gyazo](https://i.gyazo.com/275d8aac697cef306dc649b7519224e5.png)](https://gyazo.com/275d8aac697cef306dc649b7519224e5)
+
+        6. "Reload molecule from textarea"をクリックして、SDFデータを読み込む。
+              [![Image from Gyazo](https://i.gyazo.com/537a93e131badfc45e438800d3849267.png)](https://gyazo.com/537a93e131badfc45e438800d3849267)
+
+        7. Load をクリックして、メニュをたたむ。
+        [![Image from Gyazo](https://i.gyazo.com/cc307fc4da4a50ddf01f0208b8ee3839.png)](https://gyazo.com/cc307fc4da4a50ddf01f0208b8ee3839)
+
+        8. Rotate, Translate, Zoom, Slab を選択して、適当に分子の表示を変更する。
 
 * ID変換サービス
     * [リンク自動管理システム（Hyperlink Management System）](http://biodb.jp/)
@@ -162,20 +261,38 @@
 
 * [Chemical structure representation in PubChem](https://www.slideshare.net/NextMoveSoftware/chemical-structure-representation-in-pubchem?from_action=save)
 
-* ブラウザからの利用
+## ブラウザからの利用
 
-    * 化合物のページ
-        * [ゲフィチニブ（Gefitinib)](https://pubchem.ncbi.nlm.nih.gov/compound/123631#section=Top)
+* 化合物のページ
+    * [ゲフィチニブ（Gefitinib)](https://pubchem.ncbi.nlm.nih.gov/compound/123631#section=Top)
 
-        * [beta-D-Glucopyranose](https://pubchem.ncbi.nlm.nih.gov/compound/beta-D-glucose#section=Top)
+    * [beta-D-Glucopyranose](https://pubchem.ncbi.nlm.nih.gov/compound/beta-D-glucose#section=Top)
 
-    * データの取得方法
+* データの取得方法
 
-#### PubChem’s PUG (Power User Gateway)
+    * [Classification Browser](https://pubchem.ncbi.nlm.nih.gov/classification/#hid=1)
 
-* [PUG-SOAP](https://pubchemdocs.ncbi.nlm.nih.gov/pug-soap)
+        * オントロジーや分類法から、化合物のデータセットを絞り込み、絞り込んだデータセットをダウンロードすることができる。
+    
+    1. 右の**Classification**をクリック
+    [![Image from Gyazo](https://i.gyazo.com/02deb07e9c325c38e1a845427a839e2f.png)](https://gyazo.com/02deb07e9c325c38e1a845427a839e2f)
 
-* [PUG-REST](https://pubchemdocs.ncbi.nlm.nih.gov/pug-rest)
+    2. **Select classification**から、データセットを選ぶ。
+    [![Image from Gyazo](https://i.gyazo.com/8171df0099bdaaebae99420f83521439.png)](https://gyazo.com/8171df0099bdaaebae99420f83521439)
+
+    3. 
+
+
+## [PubChem’s PUG (Power User Gateway)](http://pubchemdocs.ncbi.nlm.nih.gov/programmatic-access)
+
+    * [PUG-SOAP](https://pubchemdocs.ncbi.nlm.nih.gov/pug-soap)
+
+    * [PUG-REST](https://pubchemdocs.ncbi.nlm.nih.gov/pug-rest)
+
+## [PubChemRDF](http://pubchemdocs.ncbi.nlm.nih.gov/rdf)
+
+    *  REST API
+
 
 
 # Documentation
