@@ -323,46 +323,46 @@ $$$$
     13. ダウンロードされたファイルを解凍すると、エディタなどでデータを見ることができます。
 
 * SDFを選択した場合の例
-```
-350080125
-  -OEChem-07041809452D
+        ```
+        350080125
+        -OEChem-07041809452D
 
- 59 60  0     1  0  0  0  0  0999 V2000
-   15.5021  -26.1389    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
-   17.2204  -26.1388    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
-...
-   13.7741  -22.6873    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
-   14.6327  -23.1842    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
-  1 12  1  0  0  0  0
-  1 15  1  0  0  0  0
-...
- 56 57  1  0  0  0  0
- 57 58  1  0  0  0  0
- 58 59  1  0  0  0  0
-M  END
-...
-> <PUBCHEM_SUBSTANCE_ID>
-350080125
+        59 60  0     1  0  0  0  0  0999 V2000
+        15.5021  -26.1389    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+        17.2204  -26.1388    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+        ...
+        13.7741  -22.6873    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+        14.6327  -23.1842    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+        1 12  1  0  0  0  0
+        1 15  1  0  0  0  0
+        ...
+        56 57  1  0  0  0  0
+        57 58  1  0  0  0  0
+        58 59  1  0  0  0  0
+        M  END
+        ...
+        > <PUBCHEM_SUBSTANCE_ID>
+        350080125
 
-> <PUBCHEM_EXT_DATASOURCE_NAME>
-ChEBI
+        > <PUBCHEM_EXT_DATASOURCE_NAME>
+        ChEBI
 
-> <PUBCHEM_EXT_DATASOURCE_REGID>
-CHEBI:139221
+        > <PUBCHEM_EXT_DATASOURCE_REGID>
+        CHEBI:139221
 
-> <PUBCHEM_SUBSTANCE_SYNONYM>
-CHEBI:139221
-N-[(1S,2S,3R)-1-[(alpha-D-galactopyranosyloxy)methyl]-2,3-dihydroxy-10-phenyldecyl]hexacosanamide
-N-[(2S,3S,4R)-1-(alpha-D-galactopyranosyloxy)-3,4-dihydroxy-11-phenylundecan-2-yl]hexacosanamide
-N-[(2S,3S,4R)-1-(alpha-D-galactosyloxy)-3,4-dihydroxy-11-phenylundecan-2-yl]hexacosanamide
+        > <PUBCHEM_SUBSTANCE_SYNONYM>
+        CHEBI:139221
+        N-[(1S,2S,3R)-1-[(alpha-D-galactopyranosyloxy)methyl]-2,3-dihydroxy-10-phenyldecyl]hexacosanamide
+        N-[(2S,3S,4R)-1-(alpha-D-galactopyranosyloxy)-3,4-dihydroxy-11-phenylundecan-2-yl]hexacosanamide
+        N-[(2S,3S,4R)-1-(alpha-D-galactosyloxy)-3,4-dihydroxy-11-phenylundecan-2-yl]hexacosanamide
 
-...
+        ...
 
-$$$$
-350080124
-  -OEChem-07041809452D
-...
-```
+        $$$$
+        350080124
+        -OEChem-07041809452D
+        ...
+        ```
 
 * SMILESを選択した場合の例
     * 化学構造がSMILESへ変換できない場合は、ID(SID)のみ出力される。
