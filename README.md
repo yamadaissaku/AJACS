@@ -227,7 +227,7 @@ $$$$
         1. サイトを開く
         [![Image from Gyazo](https://i.gyazo.com/8c42be6984f08224c4eccc9c09a636ef.png)](https://gyazo.com/8c42be6984f08224c4eccc9c09a636ef)
 
-        2. https://pubchem.ncbi.nlm.nih.gov/compound/13730 のダウンロード、3D ConformerのSDFで Display をクリックします。
+        2. https://pubchem.ncbi.nlm.nih.gov/compound/13730 のダウンロード、3D ConformerのSDFで Display をクリックします。
         [![Image from Gyazo](https://i.gyazo.com/39c17594df8cb8b526fc7c8882254f20.png)](https://gyazo.com/39c17594df8cb8b526fc7c8882254f20)
         
         3. 表示されたSDFデータをクリップボードにコピーします。
@@ -296,19 +296,19 @@ $$$$
 
     4. `Data type counts to display`で、`Substance`と`Compound`を切り替えると、下のカウントの数値が変わります。
 
-    5. Treeの▶をクリックして、目的のセットを探します。
+    5. Treeの ▶ をクリックして、目的のセットを探します。
     [![Image from Gyazo](https://i.gyazo.com/af8d4ddf8e5f2a03bd0cdbcc24104e41.png)](https://gyazo.com/af8d4ddf8e5f2a03bd0cdbcc24104e41)
 
-    6. 5.以外の方法として、`Search selected classification by`で、`Keyword`を選択（デフォルト）で、キーワード（ここでは、`glycolipid`）を入力し`Search`します。
+    6. 5.以外の方法として、`Search selected classification by`で、`Keyword`を選択（デフォルト）で、キーワード（ここでは、`glycolipid`）を入力し`Search`します。
     [![Image from Gyazo](https://i.gyazo.com/ec239987348227ce88abf784c43a002d.png)](https://gyazo.com/ec239987348227ce88abf784c43a002d)
 
     7. `Classification`の左のプラスのアイコンをクリックします。
     [![Image from Gyazo](https://i.gyazo.com/b512fa324124aade67907f5c7bf4ef5f.png)](https://gyazo.com/b512fa324124aade67907f5c7bf4ef5f)
 
-    8. 展開された状態で、ブラウザの検索機能で`glycolipid`を検索します。
+    8. 展開された状態で、ブラウザの検索機能で`glycolipid`を検索します。
     [![Image from Gyazo](https://i.gyazo.com/1ee1f5b22e78d8e17aaddc6b4f87147b.png)](https://gyazo.com/1ee1f5b22e78d8e17aaddc6b4f87147b)
 
-    9. 検索した`glycolipid`をクリックすると、ウインドウが開きます。`glycolipid`の左の青い数字をクリックします。
+    9. 検索した`glycolipid`をクリックすると、ウインドウが開きます。`glycolipid`の左の青い数字をクリックします。
     [![Image from Gyazo](https://i.gyazo.com/0295c4554e5a972adb45b8930f7135f3.png)](https://gyazo.com/0295c4554e5a972adb45b8930f7135f3)
 
     10. 検索（選択）された化合物のリストが表示されます。右の`Structure Download`をクリックします。
@@ -320,7 +320,7 @@ $$$$
     12. 自動的に選択した形式でデータのダウンロードが開始されます。この場合は、ファイル名`4363722229543774033.sdf.gz`としてダウンロードされます。
     [![Image from Gyazo](https://i.gyazo.com/2fee934fcd9fbac02c1e830c6724674e.png)](https://gyazo.com/2fee934fcd9fbac02c1e830c6724674e)
 
-    13. ダウンロードされたファイルを解凍すると、エディタなどでデータを見ることができます。
+    13. ダウンロードされたファイルを解凍すると、エディタなどでデータを見ることができます。
 
 * SDFを選択した場合の例
 ```
@@ -384,15 +384,7 @@ $$$$
 
 
 
-# Documentation
 
-* Slide
-
-## Tools
-
-* [Docker](https://www.docker.com/)
-
-* [jupyter](http://jupyter.org/)
 
 
 
