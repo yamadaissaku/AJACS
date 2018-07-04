@@ -3,7 +3,7 @@
 * 会場：物質・材料研究機構 千現地区研究本館1階第2会議室
 # 「**化合物データベース**」
 
-* 公益財団法人野口研究所　山田一作（やまだいっさく） [ issaku@noguchi.or.jp ]
+* 公益財団法人野口研究所　山田一作（やまだいっさく） issaku@noguchi.or.jp
 
 # 内容
 
@@ -11,8 +11,8 @@
 2. 関連データ
 3. 表記
 4. ファイル形式
-5. ツール
-6. 使ってみよう
+5. 使ってみよう
+6. ツール
 
 # 1. 概要
 
@@ -225,68 +225,7 @@ $$$$
 * [他の形式例](http://openbabel.org/docs/2.3.0/FileFormats/Overview.html)
 
 
-# 5. ツール
-
-* 化合物をコンピュータで扱うためのソフトウェア
-
-    * データベースとは別の話なので、興味がある人はリンクなどを参考ください。これらのツールを利用すると簡単なデータベースを自分で作ることができます。構造の類似度の計算や構造検索、ファイル形式変換、図の生成などが可能です。
-
-        * [Open Banel](http://openbabel.org/wiki/Main_Page)
-        * [RDKit](http://www.rdkit.org/)
-        * [Chemistry Development Kit (CDK)](https://cdk.github.io/)
-    ---
-
-    * 分子表示
-
-        * PubChem 3D Viewer
-            * 右の`3D Conformer Tools`をクリック
-
-        [![Image from Gyazo](https://i.gyazo.com/02deb07e9c325c38e1a845427a839e2f.png)](https://gyazo.com/02deb07e9c325c38e1a845427a839e2f)
-        
-            * 表示したいCIDまたはSIDを入力し、Viewをクリック
-
-        [![Image from Gyazo](https://i.gyazo.com/77a62b290a196d5c35bd2d5c967922ec.png)](https://gyazo.com/77a62b290a196d5c35bd2d5c967922ec)
-
-            * 表示されるウインドウで、化合物のコンフォマーの構造を見ることができます。また、左のツールをクリックして、画像やデータの保存することができます。
-
-        [![Image from Gyazo](https://i.gyazo.com/8ed4e106d2a27edfd0314b24d3402d38.png)](https://gyazo.com/8ed4e106d2a27edfd0314b24d3402d38)
-
-        ---
-
-        * [GLmol - Molecular Viewer on WebGL/Javascript](http://webglmol.osdn.jp/index-ja.html)
-
-            * http://webglmol.osdn.jp/glmol/viewer.html
-        
-        1. サイトを開く
-        [![Image from Gyazo](https://i.gyazo.com/8c42be6984f08224c4eccc9c09a636ef.png)](https://gyazo.com/8c42be6984f08224c4eccc9c09a636ef)
-
-        2. https://pubchem.ncbi.nlm.nih.gov/compound/13730 のダウンロード、3D ConformerのSDFで Display をクリックします。
-        [![Image from Gyazo](https://i.gyazo.com/39c17594df8cb8b526fc7c8882254f20.png)](https://gyazo.com/39c17594df8cb8b526fc7c8882254f20)
-        
-        3. 表示されたSDFデータをクリップボードにコピーします。
-            [![Image from Gyazo](https://i.gyazo.com/e67b7ec9fcac730f723da023c4f3f93c.png)](https://gyazo.com/e67b7ec9fcac730f723da023c4f3f93c)
-
-        4. 1.のサイトの Loadをクリックします。
-        [![Image from Gyazo](https://i.gyazo.com/4ec8af59d093a81fd36019f779556b9a.png)](https://gyazo.com/4ec8af59d093a81fd36019f779556b9a)
-
-        5. 緑で選択された入力欄に、コピーしたSDFデータをペーストします。
-        [![Image from Gyazo](https://i.gyazo.com/275d8aac697cef306dc649b7519224e5.png)](https://gyazo.com/275d8aac697cef306dc649b7519224e5)
-
-        6. `Reload molecule from textarea`をクリックして、SDFデータを読み込みます。
-              [![Image from Gyazo](https://i.gyazo.com/537a93e131badfc45e438800d3849267.png)](https://gyazo.com/537a93e131badfc45e438800d3849267)
-
-        7. Load をクリックして、メニュをたたみます。
-        [![Image from Gyazo](https://i.gyazo.com/cc307fc4da4a50ddf01f0208b8ee3839.png)](https://gyazo.com/cc307fc4da4a50ddf01f0208b8ee3839)
-
-        8. Rotate, Translate, Zoom, Slab を選択して、適当に分子の表示を変更してください。
-
-    ---
-
-* ID変換サービス
-    * [リンク自動管理システム（Hyperlink Management System）](http://biodb.jp/)
-        * http://biodb.jp/
-
-# 6. 使ってみよう
+# 5. 使ってみよう
 
 ## PubChem
 
@@ -321,146 +260,7 @@ $$$$
 
 ### データの取得方法
 
-* [Classification Browser](https://pubchem.ncbi.nlm.nih.gov/classification/#hid=1)
-
-        * オントロジーや分類法から、化合物のデータセットを絞り込み、絞り込んだデータセットをダウンロードすることができます。
-    
-    1. 右の`Classification`をクリック
-    [![Image from Gyazo](https://i.gyazo.com/02deb07e9c325c38e1a845427a839e2f.png)](https://gyazo.com/02deb07e9c325c38e1a845427a839e2f)
-
-    2. `Select classification`から、データセットを選ぶ。
-    [![Image from Gyazo](https://i.gyazo.com/8171df0099bdaaebae99420f83521439.png)](https://gyazo.com/8171df0099bdaaebae99420f83521439)
-
-    3. 今回はChEBIを選択してみます。
-    [![Image from Gyazo](https://i.gyazo.com/c3db102bfc7449a9266358e1c293a5e2.png)](https://gyazo.com/c3db102bfc7449a9266358e1c293a5e2)
-
-    4. `Data type counts to display`で、`Substance`と`Compound`を切り替えると、下のカウントの数値が変わります。
-
-    5. Treeの ▶ をクリックして、目的のセットを探します。
-    [![Image from Gyazo](https://i.gyazo.com/af8d4ddf8e5f2a03bd0cdbcc24104e41.png)](https://gyazo.com/af8d4ddf8e5f2a03bd0cdbcc24104e41)
-
-    6. 5.以外の方法として、`Search selected classification by`で、`Keyword`を選択（デフォルト）で、キーワード（ここでは、`glycolipid`）を入力し`Search`します。
-    [![Image from Gyazo](https://i.gyazo.com/ec239987348227ce88abf784c43a002d.png)](https://gyazo.com/ec239987348227ce88abf784c43a002d)
-
-    7. `Classification`の左のプラスのアイコンをクリックします。
-    [![Image from Gyazo](https://i.gyazo.com/b512fa324124aade67907f5c7bf4ef5f.png)](https://gyazo.com/b512fa324124aade67907f5c7bf4ef5f)
-
-    8. 展開された状態で、ブラウザの検索機能で`glycolipid`を検索します。
-    [![Image from Gyazo](https://i.gyazo.com/1ee1f5b22e78d8e17aaddc6b4f87147b.png)](https://gyazo.com/1ee1f5b22e78d8e17aaddc6b4f87147b)
-
-    9. 検索した`glycolipid`をクリックすると、ウインドウが開きます。`glycolipid`の左の青い数字をクリックします。
-    [![Image from Gyazo](https://i.gyazo.com/0295c4554e5a972adb45b8930f7135f3.png)](https://gyazo.com/0295c4554e5a972adb45b8930f7135f3)
-
-    10. 検索（選択）された化合物のリストが表示されます。右の`Structure Download`をクリックします。
-    [![Image from Gyazo](https://i.gyazo.com/9b0d71c3e5475c34b26095a11c0f7d37.png)](https://gyazo.com/9b0d71c3e5475c34b26095a11c0f7d37)
-
-    11. 検索（選択）した化合物のリストをダウンロードするためのサイトが開きます。必要に応じでformatなどを変更し、`Download`ボタンを押します。
-    [![Image from Gyazo](https://i.gyazo.com/c6747251202079b73f1849eacc58f11a.png)](https://gyazo.com/c6747251202079b73f1849eacc58f11a)
-
-    12. 自動的に選択した形式でデータのダウンロードが開始されます。この場合は、ファイル名`4363722229543774033.sdf.gz`としてダウンロードされます。
-    [![Image from Gyazo](https://i.gyazo.com/2fee934fcd9fbac02c1e830c6724674e.png)](https://gyazo.com/2fee934fcd9fbac02c1e830c6724674e)
-
-    13. ダウンロードされたファイルを解凍すると、エディタなどでデータを見ることができます。
-
-    14. データセットとして、`Gene Ontology:　biological process`を選択してみます。Data typeとして、PubMed, Gene, Protein, Taxonomyが選択できるようになります。
-    [![Image from Gyazo](https://i.gyazo.com/99754ac29478b468acd7dfe9231efa9e.png)](https://gyazo.com/99754ac29478b468acd7dfe9231efa9e)
-
-    15. ここでは、Geneを選択し、Biological Process > metabolic process > glycosylation を選択してみます。
-
-        [![Image from Gyazo](https://i.gyazo.com/91d7521e82dc98bafcb326d58e262eca.png)](https://gyazo.com/91d7521e82dc98bafcb326d58e262eca)
-
-    16. glycosylationの右の「520」をクリックすると、新しいウインドウが開きます。Geneのリストが表示されます。Gene IDのリンクをクリックすると詳細画面を見ることができます。
-    [![Image from Gyazo](https://i.gyazo.com/e04dbd581ed4173fd9664d4b7040c486.png)](https://gyazo.com/e04dbd581ed4173fd9664d4b7040c486)
-
-    * SDFを選択した場合の例
-
-        ```
-        350080125
-        -OEChem-07041809452D
-
-        59 60  0     1  0  0  0  0  0999 V2000
-        15.5021  -26.1389    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
-        17.2204  -26.1388    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
-        ...
-        13.7741  -22.6873    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
-        14.6327  -23.1842    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
-        1 12  1  0  0  0  0
-        1 15  1  0  0  0  0
-        ...
-        56 57  1  0  0  0  0
-        57 58  1  0  0  0  0
-        58 59  1  0  0  0  0
-        M  END
-        ...
-        > <PUBCHEM_SUBSTANCE_ID>
-        350080125
-
-        > <PUBCHEM_EXT_DATASOURCE_NAME>
-        ChEBI
-
-        > <PUBCHEM_EXT_DATASOURCE_REGID>
-        CHEBI:139221
-
-        > <PUBCHEM_SUBSTANCE_SYNONYM>
-        CHEBI:139221
-        N-[(1S,2S,3R)-1-[(alpha-D-galactopyranosyloxy)methyl]-2,3-dihydroxy-10-phenyldecyl]hexacosanamide
-        N-[(2S,3S,4R)-1-(alpha-D-galactopyranosyloxy)-3,4-dihydroxy-11-phenylundecan-2-yl]hexacosanamide
-        N-[(2S,3S,4R)-1-(alpha-D-galactosyloxy)-3,4-dihydroxy-11-phenylundecan-2-yl]hexacosanamide
-
-        ...
-
-        $$$$
-        350080124
-        -OEChem-07041809452D
-        ...
-        ```
-
-    * SMILESを選択した場合の例
-        * 化学構造がSMILESへ変換できない場合は、ID(SID)のみ出力されます。
-    [![Image from Gyazo](https://i.gyazo.com/941f927ef7619cc3d7254e49fa79accb.png)](https://gyazo.com/941f927ef7619cc3d7254e49fa79accb)
-
-        ```
-        350080125 CCCCCCCCCCCCCCCCCCCCCCCCCC(=O)N[C@@H](CO[C@@H]1[C@@H]([C@H]([C@H]([C@H](O1)CO)O)O)O)[C@@H]([C@@H](CCCCCCCC2=CC=CC=C2)O)O
-        350080124 CC(CC/C=C(\C)/CC/C=C(\C)/CC/C=C(\C)/CCC=C(C)C)CCOP(=O)(O)OP(=O)(O)O[C@@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O[C@H]3[C@H]([C@H]([C@@H]([C@H](O3)CO[C@@H]4[C@H]([C@H]([C@@H]([C@H](O4)CO[C@@H]5[C@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O[C@@H]6[C@H]([C@H]([C@@H]([C@H](O6)CO)O)O)O)O)O[C@@H]7[C@H]([C@H]([C@@H]([C@H](O7)CO)O)O)O[C@@H]8[C@H]([C@H]([C@@H]([C@H](O8)CO)O)O)O)O)O)O[C@@H]9[C@H]([C@H]([C@@H]([C@H](O9)CO)O)O)O[C@@H]1[C@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O[C@@H]1[C@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O)O)O)NC(=O)C)O)NC(=O)C
-        332875751 
-        329737157 CCCCCCCCCCCCCCCCCCCCCCCC(=O)N[C@@H](CO[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O[C@H]2[C@@H]([C@H]([C@H]([C@H](O2)CO)O[C@H]3[C@@H]([C@H]([C@H]([C@H](O3)CO)O)O)NC(=O)C)O[C@@]4(C[C@@H]([C@H](C(O4)[C@@H]([C@@H](CO)O[C@@]5(C[C@@H]([C@H](C(O5)[C@@H]([C@@H](CO)O)O)NC(=O)C)O)C(=O)O)O)NC(=O)C)O)C(=O)O)O)O)O)[C@@H](/C=C/CCCCCCCCCCCCC)O
-        ...
-        ```
-
-    ---
-
-* PubChem FTP
-
-    * FTPサイトからデータセットをダウンロードすることができます。
-    
-    1. 右の`PubChem FTP`をクリック
-    
-    [![Image from Gyazo](https://i.gyazo.com/02deb07e9c325c38e1a845427a839e2f.png)](https://gyazo.com/02deb07e9c325c38e1a845427a839e2f)
-    
-    2. FTPサイトが表示されます。
-    
-    [![Image from Gyazo](https://i.gyazo.com/4ae0fb53636aa99a62b41acbf879a607.png)](https://gyazo.com/4ae0fb53636aa99a62b41acbf879a607)
-
-    3. アッセイデータの例、AID-AID.zip のリストが表示されます。必要なデータをクリックするとダウンロードできます。
-    
-    [![Image from Gyazo](https://i.gyazo.com/d567b89af9b67ed9931f02604f42d864.png)](https://gyazo.com/d567b89af9b67ed9931f02604f42d864)
-
-    4. 以下のようにディレクトリをたどると、Compoundの2018-06-28更新データをSDF形式でダウンロードできます。ダウンロードしたデータは、上述のように解凍することでエディタなどでデータを見ることができます。
-    
-    [![Image from Gyazo](https://i.gyazo.com/fa193c7fc567a0591ddcd05a53de847e.png)](https://gyazo.com/fa193c7fc567a0591ddcd05a53de847e)
-
-
-
 ## [PubChem’s PUG (Power User Gateway)](http://pubchemdocs.ncbi.nlm.nih.gov/programmatic-access)
-
-* [PUG-SOAP](https://pubchemdocs.ncbi.nlm.nih.gov/pug-soap)
-
-    * web service definition language (WSDL)
-        * https://pubchem.ncbi.nlm.nih.gov/pug_soap/pug_soap.cgi?wsdl
-    * PUG SOAP Client Help
-        * https://pubchem.ncbi.nlm.nih.gov/pug_soap/client_help.html
-
-        [![Image from Gyazo](https://i.gyazo.com/48e67fd5c2f87368065df64cc65a417d.png)](https://gyazo.com/48e67fd5c2f87368065df64cc65a417d)
 
 * [PUG-REST](https://pubchemdocs.ncbi.nlm.nih.gov/pug-rest)
 
@@ -613,6 +413,17 @@ $$$$
 
 ---
 
+* [PUG-SOAP](https://pubchemdocs.ncbi.nlm.nih.gov/pug-soap)
+
+    * web service definition language (WSDL)
+        * https://pubchem.ncbi.nlm.nih.gov/pug_soap/pug_soap.cgi?wsdl
+    * PUG SOAP Client Help
+        * https://pubchem.ncbi.nlm.nih.gov/pug_soap/client_help.html
+
+        [![Image from Gyazo](https://i.gyazo.com/48e67fd5c2f87368065df64cc65a417d.png)](https://gyazo.com/48e67fd5c2f87368065df64cc65a417d)
+
+---
+
 
 ## [PubChemRDF](http://pubchemdocs.ncbi.nlm.nih.gov/rdf)
 
@@ -647,10 +458,201 @@ $$$$
     https://pubchem.ncbi.nlm.nih.gov/rest/rdf/query?graph=synonym&pred=rdf:type&obj=sio:CHEMINF_000561
 
     https://pubchem.ncbi.nlm.nih.gov/rest/rdf/query?graph=synonym&pred=rdf:type&object=sio:CHEMINF_000446,sio:CHEMINF_000447&offset=1275000
+
+---
+
+* [Classification Browser](https://pubchem.ncbi.nlm.nih.gov/classification/#hid=1)
+
+        * オントロジーや分類法から、化合物のデータセットを絞り込み、絞り込んだデータセットをダウンロードすることができます。
     
+    1. 右の`Classification`をクリック
+    [![Image from Gyazo](https://i.gyazo.com/02deb07e9c325c38e1a845427a839e2f.png)](https://gyazo.com/02deb07e9c325c38e1a845427a839e2f)
 
+    2. `Select classification`から、データセットを選ぶ。
+    [![Image from Gyazo](https://i.gyazo.com/8171df0099bdaaebae99420f83521439.png)](https://gyazo.com/8171df0099bdaaebae99420f83521439)
 
+    3. 今回はChEBIを選択してみます。
+    [![Image from Gyazo](https://i.gyazo.com/c3db102bfc7449a9266358e1c293a5e2.png)](https://gyazo.com/c3db102bfc7449a9266358e1c293a5e2)
 
+    4. `Data type counts to display`で、`Substance`と`Compound`を切り替えると、下のカウントの数値が変わります。
+
+    5. Treeの ▶ をクリックして、目的のセットを探します。
+    [![Image from Gyazo](https://i.gyazo.com/af8d4ddf8e5f2a03bd0cdbcc24104e41.png)](https://gyazo.com/af8d4ddf8e5f2a03bd0cdbcc24104e41)
+
+    6. 5.以外の方法として、`Search selected classification by`で、`Keyword`を選択（デフォルト）で、キーワード（ここでは、`glycolipid`）を入力し`Search`します。
+    [![Image from Gyazo](https://i.gyazo.com/ec239987348227ce88abf784c43a002d.png)](https://gyazo.com/ec239987348227ce88abf784c43a002d)
+
+    7. `Classification`の左のプラスのアイコンをクリックします。
+    [![Image from Gyazo](https://i.gyazo.com/b512fa324124aade67907f5c7bf4ef5f.png)](https://gyazo.com/b512fa324124aade67907f5c7bf4ef5f)
+
+    8. 展開された状態で、ブラウザの検索機能で`glycolipid`を検索します。
+    [![Image from Gyazo](https://i.gyazo.com/1ee1f5b22e78d8e17aaddc6b4f87147b.png)](https://gyazo.com/1ee1f5b22e78d8e17aaddc6b4f87147b)
+
+    9. 検索した`glycolipid`をクリックすると、ウインドウが開きます。`glycolipid`の左の青い数字をクリックします。
+    [![Image from Gyazo](https://i.gyazo.com/0295c4554e5a972adb45b8930f7135f3.png)](https://gyazo.com/0295c4554e5a972adb45b8930f7135f3)
+
+    10. 検索（選択）された化合物のリストが表示されます。右の`Structure Download`をクリックします。
+    [![Image from Gyazo](https://i.gyazo.com/9b0d71c3e5475c34b26095a11c0f7d37.png)](https://gyazo.com/9b0d71c3e5475c34b26095a11c0f7d37)
+
+    11. 検索（選択）した化合物のリストをダウンロードするためのサイトが開きます。必要に応じでformatなどを変更し、`Download`ボタンを押します。
+    [![Image from Gyazo](https://i.gyazo.com/c6747251202079b73f1849eacc58f11a.png)](https://gyazo.com/c6747251202079b73f1849eacc58f11a)
+
+    12. 自動的に選択した形式でデータのダウンロードが開始されます。この場合は、ファイル名`4363722229543774033.sdf.gz`としてダウンロードされます。
+    [![Image from Gyazo](https://i.gyazo.com/2fee934fcd9fbac02c1e830c6724674e.png)](https://gyazo.com/2fee934fcd9fbac02c1e830c6724674e)
+
+    13. ダウンロードされたファイルを解凍すると、エディタなどでデータを見ることができます。
+
+    14. データセットとして、`Gene Ontology:　biological process`を選択してみます。Data typeとして、PubMed, Gene, Protein, Taxonomyが選択できるようになります。
+    [![Image from Gyazo](https://i.gyazo.com/99754ac29478b468acd7dfe9231efa9e.png)](https://gyazo.com/99754ac29478b468acd7dfe9231efa9e)
+
+    15. ここでは、Geneを選択し、Biological Process > metabolic process > glycosylation を選択してみます。
+
+        [![Image from Gyazo](https://i.gyazo.com/91d7521e82dc98bafcb326d58e262eca.png)](https://gyazo.com/91d7521e82dc98bafcb326d58e262eca)
+
+    16. glycosylationの右の「520」をクリックすると、新しいウインドウが開きます。Geneのリストが表示されます。Gene IDのリンクをクリックすると詳細画面を見ることができます。
+    [![Image from Gyazo](https://i.gyazo.com/e04dbd581ed4173fd9664d4b7040c486.png)](https://gyazo.com/e04dbd581ed4173fd9664d4b7040c486)
+
+    * SDFを選択した場合の例
+
+        ```
+        350080125
+        -OEChem-07041809452D
+
+        59 60  0     1  0  0  0  0  0999 V2000
+        15.5021  -26.1389    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+        17.2204  -26.1388    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+        ...
+        13.7741  -22.6873    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+        14.6327  -23.1842    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+        1 12  1  0  0  0  0
+        1 15  1  0  0  0  0
+        ...
+        56 57  1  0  0  0  0
+        57 58  1  0  0  0  0
+        58 59  1  0  0  0  0
+        M  END
+        ...
+        > <PUBCHEM_SUBSTANCE_ID>
+        350080125
+
+        > <PUBCHEM_EXT_DATASOURCE_NAME>
+        ChEBI
+
+        > <PUBCHEM_EXT_DATASOURCE_REGID>
+        CHEBI:139221
+
+        > <PUBCHEM_SUBSTANCE_SYNONYM>
+        CHEBI:139221
+        N-[(1S,2S,3R)-1-[(alpha-D-galactopyranosyloxy)methyl]-2,3-dihydroxy-10-phenyldecyl]hexacosanamide
+        N-[(2S,3S,4R)-1-(alpha-D-galactopyranosyloxy)-3,4-dihydroxy-11-phenylundecan-2-yl]hexacosanamide
+        N-[(2S,3S,4R)-1-(alpha-D-galactosyloxy)-3,4-dihydroxy-11-phenylundecan-2-yl]hexacosanamide
+
+        ...
+
+        $$$$
+        350080124
+        -OEChem-07041809452D
+        ...
+        ```
+
+    * SMILESを選択した場合の例
+        * 化学構造がSMILESへ変換できない場合は、ID(SID)のみ出力されます。
+    [![Image from Gyazo](https://i.gyazo.com/941f927ef7619cc3d7254e49fa79accb.png)](https://gyazo.com/941f927ef7619cc3d7254e49fa79accb)
+
+        ```
+        350080125 CCCCCCCCCCCCCCCCCCCCCCCCCC(=O)N[C@@H](CO[C@@H]1[C@@H]([C@H]([C@H]([C@H](O1)CO)O)O)O)[C@@H]([C@@H](CCCCCCCC2=CC=CC=C2)O)O
+        350080124 CC(CC/C=C(\C)/CC/C=C(\C)/CC/C=C(\C)/CCC=C(C)C)CCOP(=O)(O)OP(=O)(O)O[C@@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O[C@H]3[C@H]([C@H]([C@@H]([C@H](O3)CO[C@@H]4[C@H]([C@H]([C@@H]([C@H](O4)CO[C@@H]5[C@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O[C@@H]6[C@H]([C@H]([C@@H]([C@H](O6)CO)O)O)O)O)O[C@@H]7[C@H]([C@H]([C@@H]([C@H](O7)CO)O)O)O[C@@H]8[C@H]([C@H]([C@@H]([C@H](O8)CO)O)O)O)O)O)O[C@@H]9[C@H]([C@H]([C@@H]([C@H](O9)CO)O)O)O[C@@H]1[C@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O[C@@H]1[C@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O)O)O)NC(=O)C)O)NC(=O)C
+        332875751 
+        329737157 CCCCCCCCCCCCCCCCCCCCCCCC(=O)N[C@@H](CO[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O[C@H]2[C@@H]([C@H]([C@H]([C@H](O2)CO)O[C@H]3[C@@H]([C@H]([C@H]([C@H](O3)CO)O)O)NC(=O)C)O[C@@]4(C[C@@H]([C@H](C(O4)[C@@H]([C@@H](CO)O[C@@]5(C[C@@H]([C@H](C(O5)[C@@H]([C@@H](CO)O)O)NC(=O)C)O)C(=O)O)O)NC(=O)C)O)C(=O)O)O)O)O)[C@@H](/C=C/CCCCCCCCCCCCC)O
+        ...
+        ```
+
+    ---
+
+* PubChem FTP
+
+    * FTPサイトからデータセットをダウンロードすることができます。
+    
+    1. 右の`PubChem FTP`をクリック
+    
+    [![Image from Gyazo](https://i.gyazo.com/02deb07e9c325c38e1a845427a839e2f.png)](https://gyazo.com/02deb07e9c325c38e1a845427a839e2f)
+    
+    2. FTPサイトが表示されます。
+    
+    [![Image from Gyazo](https://i.gyazo.com/4ae0fb53636aa99a62b41acbf879a607.png)](https://gyazo.com/4ae0fb53636aa99a62b41acbf879a607)
+
+    3. アッセイデータの例、AID-AID.zip のリストが表示されます。必要なデータをクリックするとダウンロードできます。
+    
+    [![Image from Gyazo](https://i.gyazo.com/d567b89af9b67ed9931f02604f42d864.png)](https://gyazo.com/d567b89af9b67ed9931f02604f42d864)
+
+    4. 以下のようにディレクトリをたどると、Compoundの2018-06-28更新データをSDF形式でダウンロードできます。ダウンロードしたデータは、上述のように解凍することでエディタなどでデータを見ることができます。
+    
+    [![Image from Gyazo](https://i.gyazo.com/fa193c7fc567a0591ddcd05a53de847e.png)](https://gyazo.com/fa193c7fc567a0591ddcd05a53de847e)
+
+---
+
+# 6. ツール
+
+* 化合物をコンピュータで扱うためのソフトウェア
+
+    * データベースとは別の話なので、興味がある人はリンクなどを参考ください。これらのツールを利用すると簡単なデータベースを自分で作ることができます。構造の類似度の計算や構造検索、ファイル形式変換、図の生成などが可能です。
+
+        * [Open Banel](http://openbabel.org/wiki/Main_Page)
+        * [RDKit](http://www.rdkit.org/)
+        * [Chemistry Development Kit (CDK)](https://cdk.github.io/)
+    ---
+
+    * 分子表示
+
+        * PubChem 3D Viewer
+            * 右の`3D Conformer Tools`をクリック
+
+        [![Image from Gyazo](https://i.gyazo.com/02deb07e9c325c38e1a845427a839e2f.png)](https://gyazo.com/02deb07e9c325c38e1a845427a839e2f)
+        
+            * 表示したいCIDまたはSIDを入力し、Viewをクリック
+
+        [![Image from Gyazo](https://i.gyazo.com/77a62b290a196d5c35bd2d5c967922ec.png)](https://gyazo.com/77a62b290a196d5c35bd2d5c967922ec)
+
+            * 表示されるウインドウで、化合物のコンフォマーの構造を見ることができます。また、左のツールをクリックして、画像やデータの保存することができます。
+
+        [![Image from Gyazo](https://i.gyazo.com/8ed4e106d2a27edfd0314b24d3402d38.png)](https://gyazo.com/8ed4e106d2a27edfd0314b24d3402d38)
+
+        ---
+
+        * [GLmol - Molecular Viewer on WebGL/Javascript](http://webglmol.osdn.jp/index-ja.html)
+
+            * http://webglmol.osdn.jp/glmol/viewer.html
+        
+        1. サイトを開く
+        [![Image from Gyazo](https://i.gyazo.com/8c42be6984f08224c4eccc9c09a636ef.png)](https://gyazo.com/8c42be6984f08224c4eccc9c09a636ef)
+
+        2. https://pubchem.ncbi.nlm.nih.gov/compound/13730 のダウンロード、3D ConformerのSDFで Display をクリックします。
+        [![Image from Gyazo](https://i.gyazo.com/39c17594df8cb8b526fc7c8882254f20.png)](https://gyazo.com/39c17594df8cb8b526fc7c8882254f20)
+        
+        3. 表示されたSDFデータをクリップボードにコピーします。
+            [![Image from Gyazo](https://i.gyazo.com/e67b7ec9fcac730f723da023c4f3f93c.png)](https://gyazo.com/e67b7ec9fcac730f723da023c4f3f93c)
+
+        4. 1.のサイトの Loadをクリックします。
+        [![Image from Gyazo](https://i.gyazo.com/4ec8af59d093a81fd36019f779556b9a.png)](https://gyazo.com/4ec8af59d093a81fd36019f779556b9a)
+
+        5. 緑で選択された入力欄に、コピーしたSDFデータをペーストします。
+        [![Image from Gyazo](https://i.gyazo.com/275d8aac697cef306dc649b7519224e5.png)](https://gyazo.com/275d8aac697cef306dc649b7519224e5)
+
+        6. `Reload molecule from textarea`をクリックして、SDFデータを読み込みます。
+              [![Image from Gyazo](https://i.gyazo.com/537a93e131badfc45e438800d3849267.png)](https://gyazo.com/537a93e131badfc45e438800d3849267)
+
+        7. Load をクリックして、メニュをたたみます。
+        [![Image from Gyazo](https://i.gyazo.com/cc307fc4da4a50ddf01f0208b8ee3839.png)](https://gyazo.com/cc307fc4da4a50ddf01f0208b8ee3839)
+
+        8. Rotate, Translate, Zoom, Slab を選択して、適当に分子の表示を変更してください。
+
+    ---
+
+* ID変換サービス
+    * [リンク自動管理システム（Hyperlink Management System）](http://biodb.jp/)
+        * http://biodb.jp/
+
+---
 
 
 
