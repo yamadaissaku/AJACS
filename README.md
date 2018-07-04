@@ -274,16 +274,17 @@ $$$$
 
 ## ブラウザからの利用
 
-* 化合物のページ
-    * [ゲフィチニブ（Gefitinib)](https://pubchem.ncbi.nlm.nih.gov/compound/123631#section=Top)
+### 化合物のページ
 
-    * [beta-D-Glucopyranose](https://pubchem.ncbi.nlm.nih.gov/compound/beta-D-glucose#section=Top)
+* [ゲフィチニブ（Gefitinib)](https://pubchem.ncbi.nlm.nih.gov/compound/123631#section=Top)
 
-* データの取得方法
+* [beta-D-Glucopyranose](https://pubchem.ncbi.nlm.nih.gov/compound/beta-D-glucose#section=Top)
 
-    * [Classification Browser](https://pubchem.ncbi.nlm.nih.gov/classification/#hid=1)
+### データの取得方法
 
-        * オントロジーや分類法から、化合物のデータセットを絞り込み、絞り込んだデータセットをダウンロードすることができる。
+* [Classification Browser](https://pubchem.ncbi.nlm.nih.gov/classification/#hid=1)
+
+        * オントロジーや分類法から、化合物のデータセットを絞り込み、絞り込んだデータセットをダウンロードすることができます。
     
     1. 右の`Classification`をクリック
     [![Image from Gyazo](https://i.gyazo.com/02deb07e9c325c38e1a845427a839e2f.png)](https://gyazo.com/02deb07e9c325c38e1a845427a839e2f)
@@ -331,7 +332,7 @@ $$$$
     16. glycosylationの右の「520」をクリックすると、新しいウインドウが開きます。Geneのリストが表示されます。Gene IDのリンクをクリックすると詳細画面を見ることができます。
     [![Image from Gyazo](https://i.gyazo.com/e04dbd581ed4173fd9664d4b7040c486.png)](https://gyazo.com/e04dbd581ed4173fd9664d4b7040c486)
 
-* SDFを選択した場合の例
+    * SDFを選択した場合の例
 
         ```
         350080125
@@ -374,9 +375,9 @@ $$$$
         ...
         ```
 
-* SMILESを選択した場合の例
-    * 化学構造がSMILESへ変換できない場合は、ID(SID)のみ出力される。
-[![Image from Gyazo](https://i.gyazo.com/941f927ef7619cc3d7254e49fa79accb.png)](https://gyazo.com/941f927ef7619cc3d7254e49fa79accb)
+    * SMILESを選択した場合の例
+        * 化学構造がSMILESへ変換できない場合は、ID(SID)のみ出力されます。
+    [![Image from Gyazo](https://i.gyazo.com/941f927ef7619cc3d7254e49fa79accb.png)](https://gyazo.com/941f927ef7619cc3d7254e49fa79accb)
 
         ```
         350080125 CCCCCCCCCCCCCCCCCCCCCCCCCC(=O)N[C@@H](CO[C@@H]1[C@@H]([C@H]([C@H]([C@H](O1)CO)O)O)O)[C@@H]([C@@H](CCCCCCCC2=CC=CC=C2)O)O
@@ -388,7 +389,21 @@ $$$$
 
 
 
-    * [FTP]()
+* PubChem FTP
+
+    * FTPサイトからデータセットをダウンロードすることができます。
+    
+    1. 右の`PubChem FTP`をクリック
+    [![Image from Gyazo](https://i.gyazo.com/02deb07e9c325c38e1a845427a839e2f.png)](https://gyazo.com/02deb07e9c325c38e1a845427a839e2f)
+    
+    2. FTPサイトが表示されます。
+    [![Image from Gyazo](https://i.gyazo.com/4ae0fb53636aa99a62b41acbf879a607.png)](https://gyazo.com/4ae0fb53636aa99a62b41acbf879a607)
+
+    3. アッセイデータの例、AID-AID.zip のリストが表示されます。必要なデータをクリックするとダウンロードできます。
+    [![Image from Gyazo](https://i.gyazo.com/d567b89af9b67ed9931f02604f42d864.png)](https://gyazo.com/d567b89af9b67ed9931f02604f42d864)
+
+    4. 以下のようにディレクトリをたどると、Compoundの2018-06-28更新データをSDF形式でダウンロードできます。ダウンロードしたデータは、上述のように解凍することでエディタなどでデータを見ることができます。
+    [![Image from Gyazo](https://i.gyazo.com/fa193c7fc567a0591ddcd05a53de847e.png)](https://gyazo.com/fa193c7fc567a0591ddcd05a53de847e)
 
 
 ## [PubChem’s PUG (Power User Gateway)](http://pubchemdocs.ncbi.nlm.nih.gov/programmatic-access)
