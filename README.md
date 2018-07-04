@@ -607,12 +607,47 @@ $$$$
 
         https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/vioxx/xrefs/RegistryID,RN,PubMedID/JSONP
 
+    * Example Scripts
+
+        * [pug_rest_scripts_nar_2018.zip](https://pubchemdocs.ncbi.nlm.nih.gov/pug-rest$example_scripts)
+
 ---
 
 
 ## [PubChemRDF](http://pubchemdocs.ncbi.nlm.nih.gov/rdf)
 
-    *  REST API
+*  RESTful Interface
+
+    `curl -L -H "Accept: text/rdf" -o CID2244.rdf http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID2244`
+
+    http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID2244.rdf
+
+    http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID2244.html
+
+    http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID2244.turtle
+
+    http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID2244.json
+
+    http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID2244.jsonld
+
+    http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID2244.ntriples
+
+* Query RESTful Interface
+
+    https://pubchem.ncbi.nlm.nih.gov/rest/rdf/query?graph=synonym&name=aspirin
+
+    https://pubchem.ncbi.nlm.nih.gov/rest/rdf/query?graph=synonym&name=aspirin&contain=true
+
+    https://pubchem.ncbi.nlm.nih.gov/rest/rdf/query?graph=synonym&name=aspirin&return=compound
+
+    https://pubchem.ncbi.nlm.nih.gov/rest/rdf/query?graph=synonym&name=aspirin&format=json
+
+    https://pubchem.ncbi.nlm.nih.gov/rest/rdf/query?graph=substance&predicate=rdf:type&offset=10000
+
+    https://pubchem.ncbi.nlm.nih.gov/rest/rdf/query?graph=synonym&pred=rdf:type&obj=sio:CHEMINF_000561
+
+    https://pubchem.ncbi.nlm.nih.gov/rest/rdf/query?graph=synonym&pred=rdf:type&object=sio:CHEMINF_000446,sio:CHEMINF_000447&offset=1275000
+    
 
 
 
