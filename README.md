@@ -89,10 +89,14 @@
 
     * (2*R*,3*S*,5*R*)-5-(6-aminopurin-9-yl)-2-(hydroxymethyl)oxolan-3-ol
 
+    ---
+
 * 慣用名
 
     * `デオキシアデノシン`
     * `2'-deoxyadenosine`
+
+    ---
 
 * ID
 
@@ -104,24 +108,34 @@
     * [CAS 登録番号](https://www.jaici.or.jp/casproducts/rn/index.html)
     * その他のデータベースのID
 
+    ---
+
 * SMILES
 
     * `C1[C@@H]([C@H](O[C@H]1N2C=NC3=C2N=CN=C3N)CO)O`
     * 混合物の場合
         `CO.CCO.OCCC.C1CCCCC1.C2=CC=CC=C2`
 
+    ---
+
 * CTFile (Molfile, SDfile)
 
     * 古くから利用されている。バージョンとしてV2000とV3000がある。一般的にはV2000が利用されているが、原子数、結合数が各999個までの制限がある。V3000にはこの制限はない。
     * ファイル形式の説明でもう少し詳しく説明します。
 
+    ---
+
 *  IUPAC International Chemical Identifier (InChI<sup>TM</sup>)
 
     * `InChI=1S/C10H13N5O3/c11-9-8-10(13-3-12-9)15(4-14-8)7-1-5(17)6(2-16)18-7/h3-7,16-17H,1-2H2,(H2,11,12,13)/t5-,6+,7+/m0/s1`
 
+    ---
+
 * InChIKey
 
     * `OLXZPDWKRNYJJZ-RRKCRQDMSA-N`
+
+    ---
 
 
 # 4. ファイル形式
@@ -138,6 +152,8 @@ C2=CC=CC=C2
 ```
 
 [![Image from Gyazo](https://i.gyazo.com/3dba74f046db054537dd620752484de1.png)](https://gyazo.com/3dba74f046db054537dd620752484de1)
+
+---
 
 * .mol
 
@@ -162,6 +178,7 @@ M  END
 
 [![Image from Gyazo](https://i.gyazo.com/80b795c3979bead01535bde52d9c863b.png)](https://gyazo.com/80b795c3979bead01535bde52d9c863b)
 
+---
 
 * .sdf
 
@@ -217,8 +234,24 @@ $$$$
         * [Open Banel](http://openbabel.org/wiki/Main_Page)
         * [RDKit](http://www.rdkit.org/)
         * [Chemistry Development Kit (CDK)](https://cdk.github.io/)
-    
+    ---
+
     * 分子表示
+
+        * PubChem 3D Viewer
+            * 右の`3D Conformer Tools`をクリック
+
+        [![Image from Gyazo](https://i.gyazo.com/02deb07e9c325c38e1a845427a839e2f.png)](https://gyazo.com/02deb07e9c325c38e1a845427a839e2f)
+        
+            * 表示したいCIDまたはSIDを入力し、Viewをクリック
+
+        [![Image from Gyazo](https://i.gyazo.com/77a62b290a196d5c35bd2d5c967922ec.png)](https://gyazo.com/77a62b290a196d5c35bd2d5c967922ec)
+
+            * 表示されるウインドウで、化合物のコンフォマーの構造を見ることができます。また、左のツールをクリックして、画像やデータの保存することができます。
+
+        [![Image from Gyazo](https://i.gyazo.com/8ed4e106d2a27edfd0314b24d3402d38.png)](https://gyazo.com/8ed4e106d2a27edfd0314b24d3402d38)
+
+        ---
 
         * [GLmol - Molecular Viewer on WebGL/Javascript](http://webglmol.osdn.jp/index-ja.html)
 
@@ -247,6 +280,8 @@ $$$$
 
         8. Rotate, Translate, Zoom, Slab を選択して、適当に分子の表示を変更してください。
 
+    ---
+
 * ID変換サービス
     * [リンク自動管理システム（Hyperlink Management System）](http://biodb.jp/)
         * http://biodb.jp/
@@ -272,6 +307,8 @@ $$$$
 
 * [Chemical structure representation in PubChem](https://www.slideshare.net/NextMoveSoftware/chemical-structure-representation-in-pubchem?from_action=save)
 
+---
+
 ## ブラウザからの利用
 
 ### 化合物のページ
@@ -279,6 +316,8 @@ $$$$
 * [ゲフィチニブ（Gefitinib)](https://pubchem.ncbi.nlm.nih.gov/compound/123631#section=Top)
 
 * [beta-D-Glucopyranose](https://pubchem.ncbi.nlm.nih.gov/compound/beta-D-glucose#section=Top)
+
+---
 
 ### データの取得方法
 
@@ -327,7 +366,8 @@ $$$$
     [![Image from Gyazo](https://i.gyazo.com/99754ac29478b468acd7dfe9231efa9e.png)](https://gyazo.com/99754ac29478b468acd7dfe9231efa9e)
 
     15. ここでは、Geneを選択し、Biological Process > metabolic process > glycosylation を選択してみます。
-    [![Image from Gyazo](https://i.gyazo.com/91d7521e82dc98bafcb326d58e262eca.png)](https://gyazo.com/91d7521e82dc98bafcb326d58e262eca)
+
+        [![Image from Gyazo](https://i.gyazo.com/91d7521e82dc98bafcb326d58e262eca.png)](https://gyazo.com/91d7521e82dc98bafcb326d58e262eca)
 
     16. glycosylationの右の「520」をクリックすると、新しいウインドウが開きます。Geneのリストが表示されます。Gene IDのリンクをクリックすると詳細画面を見ることができます。
     [![Image from Gyazo](https://i.gyazo.com/e04dbd581ed4173fd9664d4b7040c486.png)](https://gyazo.com/e04dbd581ed4173fd9664d4b7040c486)
@@ -387,7 +427,7 @@ $$$$
         ...
         ```
 
-
+    ---
 
 * PubChem FTP
 
@@ -404,6 +444,7 @@ $$$$
 
     4. 以下のようにディレクトリをたどると、Compoundの2018-06-28更新データをSDF形式でダウンロードできます。ダウンロードしたデータは、上述のように解凍することでエディタなどでデータを見ることができます。
     [![Image from Gyazo](https://i.gyazo.com/fa193c7fc567a0591ddcd05a53de847e.png)](https://gyazo.com/fa193c7fc567a0591ddcd05a53de847e)
+
 
 
 ## [PubChem’s PUG (Power User Gateway)](http://pubchemdocs.ncbi.nlm.nih.gov/programmatic-access)
