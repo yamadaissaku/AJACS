@@ -434,15 +434,19 @@ $$$$
     * FTPサイトからデータセットをダウンロードすることができます。
     
     1. 右の`PubChem FTP`をクリック
+    
     [![Image from Gyazo](https://i.gyazo.com/02deb07e9c325c38e1a845427a839e2f.png)](https://gyazo.com/02deb07e9c325c38e1a845427a839e2f)
     
     2. FTPサイトが表示されます。
+    
     [![Image from Gyazo](https://i.gyazo.com/4ae0fb53636aa99a62b41acbf879a607.png)](https://gyazo.com/4ae0fb53636aa99a62b41acbf879a607)
 
     3. アッセイデータの例、AID-AID.zip のリストが表示されます。必要なデータをクリックするとダウンロードできます。
+    
     [![Image from Gyazo](https://i.gyazo.com/d567b89af9b67ed9931f02604f42d864.png)](https://gyazo.com/d567b89af9b67ed9931f02604f42d864)
 
-    4. 以下のようにディレクトリをたどると、Compoundの2018-06-28更新データをSDF形式でダウンロードできます。ダウンロードしたデータは、上述のように解凍することでエディタなどでデータを見ることができます。
+    4. 以下のようにディレクトリをたどると、Compoundの2018-06-28更新データをSDF形式でダウンロードできます。ダウンロードしたデータは、上述のように解凍することでエディタなどでデータを見ることができます。
+    
     [![Image from Gyazo](https://i.gyazo.com/fa193c7fc567a0591ddcd05a53de847e.png)](https://gyazo.com/fa193c7fc567a0591ddcd05a53de847e)
 
 
