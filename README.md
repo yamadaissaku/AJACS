@@ -453,9 +453,162 @@ $$$$
 
 ## [PubChem’s PUG (Power User Gateway)](http://pubchemdocs.ncbi.nlm.nih.gov/programmatic-access)
 
-    * [PUG-SOAP](https://pubchemdocs.ncbi.nlm.nih.gov/pug-soap)
+* [PUG-SOAP](https://pubchemdocs.ncbi.nlm.nih.gov/pug-soap)
 
-    * [PUG-REST](https://pubchemdocs.ncbi.nlm.nih.gov/pug-rest)
+    * web service definition language (WSDL)
+        * https://pubchem.ncbi.nlm.nih.gov/pug_soap/pug_soap.cgi?wsdl
+    * PUG SOAP Client Help
+        * https://pubchem.ncbi.nlm.nih.gov/pug_soap/client_help.html
+
+        [![Image from Gyazo](https://i.gyazo.com/48e67fd5c2f87368065df64cc65a417d.png)](https://gyazo.com/48e67fd5c2f87368065df64cc65a417d)
+
+* [PUG-REST](https://pubchemdocs.ncbi.nlm.nih.gov/pug-rest)
+
+    * URL
+
+    `https://pubchem.ncbi.nlm.nih.gov/rest/pug/<input specification>/<operation specification>/[<output specification>][?<operation_options>]`
+
+    * レコード検索
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/sourceid/DTP.NCI/747285/SDF
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/sourceid/DTP.NCI/747285/PNG
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/SDF
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/PNG
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/SDF?record_type=3d
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/PNG?record_type=3d&image_size=small
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/aspirin/SDF
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/BPGDAMSIGCZZLK-UHFFFAOYSA-N/SDF
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1000/XML
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1000/CSV?sid=26736081,26736082,26736083
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1000/concise/CSV
+
+    * Compound Property Tables
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/1,2,3,4,5/property/MolecularFormula,MolecularWeight,InChIKey/CSV
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/1,2,3,4,5/property/MolecularFormula,MolecularWeight,InChIKey/JSON
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/1,2,3,4,5/property/IsomericSMILES,XLogP,TPSA,HBondDonorCount,HBondAcceptorCount,RotatableBondCount,AtomStereoCount,BondStereoCount/JSON
+
+    * Synonyms
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/aspirin/synonyms/JSON
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/smiles/CCCC/synonyms/XML
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/sid/53789435/synonyms/TXT
+
+    * Description
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/1983/description/XML
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/1983/description/JSON
+
+
+    * SIDS / CIDS / AIDS
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/name/glucose/sids/XML
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/name/glucose/sids/XML?list_return=listkey
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/name/glucose/cids/XML?list_return=grouped
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/name/glucose/cids/XML?list_return=flat
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/sourceall/MLSMR/sids/JSON?list_return=listkey
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/sourceall/R%26D%20Chemicals/sids/XML?list_return=listkey
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/sid/123061,123079/cids/XML?cids_type=all
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/sids/JSON
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/192180/cids/TXT?cids_type=component
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/aids/JSON?aids_type=active
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/sids/JSON?sids_type=component
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/cids/TXT?cids_type=same_connectivity
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/21145249/cids/XML?cids_type=parent
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1000/sids/XML?sids_type=inactive
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/504526/sids/JSON?sids_type=doseresponse
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/type/doseresponse/aids/JSON
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/sourceall/DTP.NCI/aids/XML
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/xref/PatentID/EP0711162A1/sids/XML
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/myxalamid/cids/XML?name_type=word
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/myxalamid/cids/XML?name_type=complete
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/target/genesymbol/USP2/aids/TXT
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/target/gi/116516899/aids/JSON
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/activity/EC50/aids/TXT
+
+    * Assay Description
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/490/description/XML
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/490/description/JSON
+
+    * Assay Targets
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/490,1000/targets/ProteinGI,ProteinName,GeneID,GeneSymbol/XML
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/490,1000/targets/ProteinGI,ProteinName,GeneID,GeneSymbol/JSON
+
+    * Assay Summary
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/1000,1001/assaysummary/CSV
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/sid/104234342/assaysummary/XML
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/sid/104234342/assaysummary/JSON
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1000/summary/XML
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1000/summary/JSON
+
+    * Assay Dose-Response
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/504526/doseresponse/XML
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/504526/doseresponse/CSV?sid=104169547,109967232
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/602332/sids/XML?sids_type=doseresponse&list_return=listkey
+
+    * Classification
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/sid/1917/classification/XML
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/1983/classification/JSON?classification_type=original
+
+    * XRefs
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/substance/sid/127378063/xrefs/PatentID/XML
+
+        https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/vioxx/xrefs/RegistryID,RN,PubMedID/JSONP
+
+---
+
 
 ## [PubChemRDF](http://pubchemdocs.ncbi.nlm.nih.gov/rdf)
 
