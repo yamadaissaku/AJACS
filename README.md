@@ -238,11 +238,15 @@ $$$$
             * http://togotv.dbcls.jp/20171208.html
 [![Image from Gyazo](https://i.gyazo.com/dd9616fac93a903519ba6e8e7cca85fc.png)](https://gyazo.com/dd9616fac93a903519ba6e8e7cca85fc)
 
-* Compound, Substance, BioAssay
+* [Compound, Substance, BioAssay](https://pubchemdocs.ncbi.nlm.nih.gov/about)
 
     * Substance   SID (SubstanceID)
     * Compound    CID (CompoundID)
     * BioAssay    AID (AssayID)
+
+        [![Image from Gyazo](https://i.gyazo.com/1be913ae900eaca8772cdfde5bca42c2.png)](https://gyazo.com/1be913ae900eaca8772cdfde5bca42c2)
+
+* [Data Sources](https://pubchem.ncbi.nlm.nih.gov/sources)
 
 * [Chemical structure representation in PubChem](https://www.slideshare.net/NextMoveSoftware/chemical-structure-representation-in-pubchem?from_action=save)
 
